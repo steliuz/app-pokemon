@@ -1,0 +1,55 @@
+{
+  "name": "pokemon-quasar",
+  "version": "0.0.1",
+  "description": "App realizada sobre la api de pokemon",
+  "productName": "pokemon-quasar",
+  "author": "Steliuz <jesusrosales19@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue ./",
+    "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"See package.json => scripts for available tests.\" && exit 0",
+    "pwa": "yarn quasar build -m pwa",
+    "icons": "icongenie generate -i AppIcon.png --skip-trim",
+    "apk": "yarn quasar build -m capacitor -T android -d",
+    "test:unit": "vitest",
+    "test:unit:ci": "vitest run"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "axios": "^0.21.1",
+    "echarts": "^5.4.0",
+    "pinia": "^2.0.24",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0",
+    "vue3-echarts-v3": "^1.0.2"
+  },
+  "devDependencies": {
+    "@pinia/testing": "^0.0.14",
+    "@quasar/app-vite": "^1.0.0",
+    "@quasar/quasar-app-extension-testing": "^2.0.5",
+    "@quasar/quasar-app-extension-testing-unit-vitest": "^0.1.0",
+    "@vue/test-utils": "^2.0.0",
+    "autoprefixer": "^10.4.2",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.5.1",
+    "vitest": "^0.15.0",
+    "workbox-build": "^6.5.0",
+    "workbox-cacheable-response": "^6.5.0",
+    "workbox-core": "^6.5.0",
+    "workbox-expiration": "^6.5.0",
+    "workbox-precaching": "^6.5.0",
+    "workbox-routing": "^6.5.0",
+    "workbox-strategies": "^6.5.0"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
